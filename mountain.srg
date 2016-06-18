@@ -3940,10 +3940,14 @@ FD: net/minecraft/server/EnumProtocol/i net/minecraft/network/EnumConnectionStat
 FD: net/minecraft/server/EnumProtocol/j net/minecraft/network/EnumConnectionState/directionMaps
 FD: net/minecraft/server/EnumProtocol/k net/minecraft/network/EnumConnectionState/$VALUES
 FD: net/minecraft/server/EnumRenderType/e net/minecraft/util/EnumBlockRenderType/$VALUES
+FD: net/minecraft/server/EnumSkeletonType/d net/minecraft/entity/EnumSkeletonType/translateText
+FD: net/minecraft/server/EnumSkeletonType/e net/minecraft/entity/EnumSkeletonType/lootTable
 FD: net/minecraft/server/EnumSkyBlock/c net/minecraft/world/EnumSkyBlock/defaultLightValue
 FD: net/minecraft/server/EnumSkyBlock/d net/minecraft/world/EnumSkyBlock/$VALUES
 FD: net/minecraft/server/EnumWorldBorderState/d net/minecraft/world/border/EnumBorderStatus/id
 FD: net/minecraft/server/EnumWorldBorderState/e net/minecraft/world/border/EnumBorderStatus/$VALUES
+FD: net/minecraft/server/EnumZombieType/h net/minecraft/entity/EnumZombieType/isVillager
+FD: net/minecraft/server/EnumZombieType/i net/minecraft/entity/EnumZombieType/translateText
 FD: net/minecraft/server/EULA/a net/minecraft/server/ServerEula/LOG
 FD: net/minecraft/server/EULA/b net/minecraft/server/ServerEula/eulaFile
 FD: net/minecraft/server/EULA/c net/minecraft/server/ServerEula/acceptedEULA
@@ -6650,6 +6654,24 @@ FD: net/minecraft/server/WorldGenForest/b net/minecraft/world/gen/feature/WorldG
 FD: net/minecraft/server/WorldGenForest/c net/minecraft/world/gen/feature/WorldGenBirchTree/useExtraRandomHeight
 FD: net/minecraft/server/WorldGenForestTree/a net/minecraft/world/gen/feature/WorldGenCanopyTree/DARK_OAK_LOG
 FD: net/minecraft/server/WorldGenForestTree/b net/minecraft/world/gen/feature/WorldGenCanopyTree/DARK_OAK_LEAVES
+FD: net/minecraft/server/WorldGenFossils/a net/minecraft/world/gen/feature/WorldGenFossils/fossilSpine1
+FD: net/minecraft/server/WorldGenFossils/b net/minecraft/world/gen/feature/WorldGenFossils/fossilSpine2
+FD: net/minecraft/server/WorldGenFossils/c net/minecraft/world/gen/feature/WorldGenFossils/fossilSpine3
+FD: net/minecraft/server/WorldGenFossils/d net/minecraft/world/gen/feature/WorldGenFossils/fossileSpine4
+FD: net/minecraft/server/WorldGenFossils/e net/minecraft/world/gen/feature/WorldGenFossils/fossileSpine1coal
+FD: net/minecraft/server/WorldGenFossils/f net/minecraft/world/gen/feature/WorldGenFossils/fossilSpine2coal
+FD: net/minecraft/server/WorldGenFossils/g net/minecraft/world/gen/feature/WorldGenFossils/fossileSpine03coal
+FD: net/minecraft/server/WorldGenFossils/h net/minecraft/world/gen/feature/WorldGenFossils/fossilSpine4coal
+FD: net/minecraft/server/WorldGenFossils/i net/minecraft/world/gen/feature/WorldGenFossils/fossileSkull1
+FD: net/minecraft/server/WorldGenFossils/j net/minecraft/world/gen/feature/WorldGenFossils/fossileSkull2
+FD: net/minecraft/server/WorldGenFossils/k net/minecraft/world/gen/feature/WorldGenFossils/fossilSkull3
+FD: net/minecraft/server/WorldGenFossils/l net/minecraft/world/gen/feature/WorldGenFossils/fossilSkull4
+FD: net/minecraft/server/WorldGenFossils/m net/minecraft/world/gen/feature/WorldGenFossils/fossilSkull1coal
+FD: net/minecraft/server/WorldGenFossils/n net/minecraft/world/gen/feature/WorldGenFossils/fossilSkull2coal
+FD: net/minecraft/server/WorldGenFossils/o net/minecraft/world/gen/feature/WorldGenFossils/fossilSkull3coal
+FD: net/minecraft/server/WorldGenFossils/p net/minecraft/world/gen/feature/WorldGenFossils/fossilSkull4coal
+FD: net/minecraft/server/WorldGenFossils/q net/minecraft/world/gen/feature/WorldGenFossils/boneFossils
+FD: net/minecraft/server/WorldGenFossils/r net/minecraft/world/gen/feature/WorldGenFossils/coalFossils
 FD: net/minecraft/server/WorldGenGrass/a net/minecraft/world/gen/feature/WorldGenTallGrass/tallGrassState
 FD: net/minecraft/server/WorldGenGroundBush/a net/minecraft/world/gen/feature/WorldGenShrub/leavesMetadata
 FD: net/minecraft/server/WorldGenGroundBush/b net/minecraft/world/gen/feature/WorldGenShrub/woodMetadata
@@ -6928,6 +6950,15 @@ MD: net/minecraft/server/DedicatedServer/q ()I net/minecraft/server/dedicated/De
 MD: net/minecraft/server/DedicatedServer/r ()Z net/minecraft/server/dedicated/DedicatedServer/shouldBroadcastRconToOps ()Z
 MD: net/minecraft/server/DedicatedServer/s ()Z net/minecraft/server/dedicated/DedicatedServer/shouldBroadcastConsoleToOps ()Z
 MD: net/minecraft/server/EntityMinecartContainer/l ()V net/minecraft/entity/item/EntityMinecartContainer/initWorldChunkLoad ()V
+MD: net/minecraft/server/EnumSkeletonType/a ()I net/minecraft/entity/EnumSkeletonType/getId ()I
+MD: net/minecraft/server/EnumSkeletonType/c ()Lnet/minecraft/server/MinecraftKey; net/minecraft/entity/EnumSkeletonType/getLootTable ()Lnet/minecraft/util/ResourceLocation;
+MD: net/minecraft/server/EnumZombieType/a ()I net/minecraft/entity/EnumZombieType/getId ()I
+MD: net/minecraft/server/EnumZombieType/b ()Z net/minecraft/entity/EnumZombieType/isVillager ()Z
+MD: net/minecraft/server/EnumZombieType/e ()Z net/minecraft/entity/EnumZombieType/isNotHusk ()Z
+MD: net/minecraft/server/EnumZombieType/f ()Lnet/minecraft/server/SoundEffect; net/minecraft/entity/EnumZombieType/getDeathSound ()Lnet/minecraft/util/SoundEvent;
+MD: net/minecraft/server/EnumZombieType/g ()Lnet/minecraft/server/SoundEffect; net/minecraft/entity/EnumZombieType/getStepSound ()Lnet/minecraft/util/SoundEvent;
+MD: net/minecraft/server/EnumZombieType/h ()Lnet/minecraft/server/SoundEffect; net/minecraft/entity/EnumZombieType/getHurtSound ()Lnet/minecraft/util/SoundEvent;
+MD: net/minecraft/server/EnumZombieType/i ()Lnet/minecraft/server/SoundEffect; net/minecraft/entity/EnumZombieType/getBangDoorSound ()Lnet/minecraft/util/SoundEvent;
 MD: net/minecraft/server/EULA/a (Ljava/io/File;)Z net/minecraft/server/ServerEula/checkEula (Ljava/io/File;)Z
 MD: net/minecraft/server/EULA/a ()Z net/minecraft/server/ServerEula/agreesToEula ()Z
 MD: net/minecraft/server/EULA/b ()V net/minecraft/server/ServerEula/writeEula ()V
